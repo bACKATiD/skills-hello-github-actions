@@ -4,16 +4,9 @@ on:
     types: [opened]
 permissions:
   pull-requests: write
- welcome-workflow
 
 jobs:
   welcome:
     runs-on: ubuntu-latest
     steps:
-       run: echo "Welcome to the repository!"
-
-jobs:
-  build:
-    name: Post welcome comment
-    runs-on: ubuntu-latest
-  main
+      - run: echo "Welcome to the repository!"
